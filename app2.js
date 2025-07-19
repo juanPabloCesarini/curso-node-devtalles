@@ -1,9 +1,9 @@
-const fs = require(`fs`);
+const fs = require(`fs`); // FileSystem
 
-const data = fs.readFileSync('readme2.md', 'utf8');
+const data = fs.readFileSync('readme2.md', 'utf-8');
 
 const newData = data.replace(/React/ig, 'Angular');
-// ig: case insensitive. Lo que hace la funcion es reemplar React por Angular
+// ig: case insensitive. Lo que hace la funcion es reemplazar React por Angular
 
 
 fs.writeFileSync('README-Angular.md',newData);
