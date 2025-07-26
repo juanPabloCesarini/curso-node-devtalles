@@ -2,10 +2,13 @@
 //require('./js-foundation/02-destructuring.js');
 const {getUsesById} = require('./js-foundation/03-callbacks.js');
 
-const id=3;
-getUsesById(id, function(error, user){
-    if(error){
-        throw new Error(`Usuario no encontrado con el id: ${id}`);
+const id=2;
+getUsesById(id, (error, user)=>{
+ if(error){
+        throw new Error(`${error} ${id}`);
     }
     console.log(user);
 })
+
+   
+    

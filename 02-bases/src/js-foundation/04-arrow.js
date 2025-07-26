@@ -9,8 +9,8 @@ const users = [
     },
 ];
 
- const getUsesById= (id, callback) =>{
-   const user = users.find((user)=>{
+function getUsesById(id, callback){
+   const user = users.find(function(user){
         return user.id === id;
     });
 
@@ -18,6 +18,7 @@ const users = [
         return callback("no encontrado");
     }
     return callback(null,user);
- 
+
+    
 }
 module.exports = {getUsesById}
