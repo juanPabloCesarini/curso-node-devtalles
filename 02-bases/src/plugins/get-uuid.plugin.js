@@ -4,4 +4,6 @@ const idConstructor = ()=>{
     return uuidv4();
 }
 
-module.exports = {idConstructor,}
+module.exports = {
+    idConstructor,
+}
