@@ -1,5 +1,7 @@
-const { idConstructor,getAge, buildLogger } = require('./plugins');
+//const { idConstructor,getAge, buildLogger } = require('./plugins');
 //const getPokemonById = require('./js-foundation/06-promesas');
+
+import {buildLogger} from "./plugins/logger.plugin";
 
 /* const name = getPokemonById(1, (pokemon)=>{
     console.log({pokemon});

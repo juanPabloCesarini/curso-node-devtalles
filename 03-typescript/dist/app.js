@@ -1,26 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const heroes = [
-    {
-        id: 1,
-        name: 'Ironman',
-        owner: 'Marvel',
-    },
-    {
-        id: 2,
-        name: 'Spiderman',
-        owner: 'Marvel',
-    },
-    {
-        id: 3,
-        name: 'Batman',
-        owner: 'DC',
-    },
-];
-const findHeroById = (id) => {
-    return heroes.find((hero) => hero.id === id);
-};
-const hero = findHeroById(3);
-console.log(hero);
+const hero_service_1 = require("./services/hero.service");
+const hero = (0, hero_service_1.findHeroById)(3);
+//console.log(hero);
 console.log(hero?.name ?? "hero not found");
 //# sourceMappingURL=app.js.map
